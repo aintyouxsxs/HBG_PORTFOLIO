@@ -1,111 +1,168 @@
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Porfolio</title>
-	<link rel="stylesheet" type="text/css" href="css.css">
-	<script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website!</title> 
+    <link rel="stylesheet" href="css/wilson.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" href="fonts-6/css/all.css">
+ </head>
+
 <body>
 
 <div id="header">
 	<div class="cover">
-		<div class="navigation">
-			<h1 class="logo"> HBG </h1>
-			<ul>
-				<li><a href="home.html">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#works">Works</a></li>
-				<li><a href="#developer">Contact</a></li>
-			</ul>
+		<h1 class="logo">HBG</h1>
+		<nav class="navigation">
+			<a href="home.html">Home</a>
+			<a href="#home">Portfolio</a>
+			<a href="#about-me">About</a>
+			<a href="#services">Services</a>
+			<a href="#work">Work</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</div>
+</div>
+
+<div id="home">
+	<div class="home-container">
+		<div class="home-content">
+			<div class="home-list">
+				<h3>Hello, It's Me</h3>
+				<h1><span>Mark Wilson</span> Bunag</h1>
+			</div>
+			<div class="home-img">
+				<img src="img/wilson/wilsonfront.png">
+			</div>
 		</div>
 	</div>
 </div>
 
-	<section class="about" id="about">
-		<div class="about-img">
-			<img src="pak.jpg">
-		</div>
-
-		<div class="about-text">
-			<h2>About <span>Me</span></h2>
-			<h4>Creative UI/UX Designer!</h4>
-			<p>As an accomplished programmer, I have an exceptional talent for developing software applications that are both functional and user-friendly. With several years of experience, I have honed my skills in various programming languages, including Java, Python, and C++. Besides programming, I am passionate about  tackling complex projects, optimizing computer systems, and building software solutions that have a significant impact on users. I am also an avid learner, continuously seeking and exploring new technologies and ideas to improve my programming knowledge and expertise. </p>
-		</div>
-	</section>
+<div id="about-me">
+	<div class="about-me-container">
+		<h1 class="sub-title">About <span>Me</span></h1>
+			<div class="about-me-page">
+				<div>
+					<img src="img/wilson/wilsonabout.jpg">
+					<h3>UI/IX Developer</h3>
+					<p>I am a skilled UI/UX developer with a passion for crafting exceptional user experiences. With a solid foundation in design principles and front-end development, I strive to create visually stunning and intuitive interfaces. My expertise lies in understanding user needs and translating them into engaging designs that prioritize usability and accessibility. By conducting thorough user research and leveraging industry best practices, I am dedicated to creating seamless interactions that delight users and exceed expectations. I am constantly refining my skills and staying updated with the latest design trends to deliver impactful solutions that leave a lasting impression.</p>
+				</div>
+			</div>
+			
+	</div>
+</div>
 
 <div id="services">
 	<div class="container">
-		<h1 class="sub-title">My Services</h1>
+		<h1 class="sub-title">My <span>Services</span></h1>
 		<div class="services-list">
 			<div>
-				<i class="fa-solid fa-code"></i>
+				<i class="fa-brands fa-html5"></i>
 				<h2>HTML</h2>
-				<p>Web designing is the process of creating visually appealing and functional websites that can meet the needs of the users. It involves designing layout, graphics, and content presentation to make it easy for users to navigate and interact with the website.</p>
-				<a href="#">Learn More</a>
+				<p>Mastering HTML is essential for any aspiring web developer, as it serves as the foundation for building interactive and visually appealing websites. With HTML skills, you can effectively structure and present content, create user-friendly interfaces, and have the flexibility to integrate various elements that enhance the overall user experience.</p>
 			</div>
 			<div>
-				<i class="fa-brands fa-java"></i>
-				<h2>C and C++</h2>
-				<p>Java is a programming language originally developed by James Gosling at Sun Microsystems (which is now owned by Oracle) in 1995. It is popular for its platform independence, meaning that it can run on any operating system with a Java Virtual Machine installed.</p>
-				<a href="#">Learn More</a>
-			</div>
-			<div>
-				<i class="fa-brands fa-app-store"></i>
-				<h2>Javascript</h2>
-				<p>Arnis, also known as Kali or Eskrima, is a traditional Filipino martial art that focuses on using sticks, knives, and other weapons for self-defense. It emphasizes adaptability and practicality in real-life combat situations, making it a popular martial art for law enforcement and military personnel worldwide.</p>
-				<a href="#">Learn More</a>
-			</div>
-			<div>
-				<i class="fa-solid fa-code"></i>
-				<h2>MySQL</h2>
-				<p>Web designing is the process of creating visually appealing and functional websites that can meet the needs of the users. It involves designing layout, graphics, and content presentation to make it easy for users to navigate and interact with the website.</p>
-				<a href="#">Learn More</a>
-			</div>
-			<div>
-				<i class="fa-brands fa-java"></i>
-				<h2>Java</h2>
-				<p>Java is a programming language originally developed by James Gosling at Sun Microsystems (which is now owned by Oracle) in 1995. It is popular for its platform independence, meaning that it can run on any operating system with a Java Virtual Machine installed.</p>
-				<a href="#">Learn More</a>
-			</div>
-			<div>
-				<i class="fa-brands fa-app-store"></i>
+				<i class="fa-brands fa-css3-alt"></i>
 				<h2>CSS</h2>
-				<p>Arnis, also known as Kali or Eskrima, is a traditional Filipino martial art that focuses on using sticks, knives, and other weapons for self-defense. It emphasizes adaptability and practicality in real-life combat situations, making it a popular martial art for law enforcement and military personnel worldwide.</p>
-				<a href="#">Learn More</a>
+				<p>CSS (Cascading Style Sheets) is a powerful tool that allows you to transform the look and feel of web pages, giving them a visually stunning and polished appearance. By mastering CSS, you can customize colors, layouts, typography, and animations, turning static websites into dynamic and captivating user experiences that leave a lasting impression.</p>
+			</div>
+			<div>
+				<i class="fa-brands fa-square-js"></i>
+				<h2>Javascript</h2>
+				<p>
+					Unlock the full potential of your website or web application with my JavaScript services. From developing interactive interfaces to implementing complex functionalities, I offer expertise in leveraging JavaScript to create dynamic and user-friendly experiences that will captivate your audience and elevate your online presence.</p>
 			</div>
 		</div>
 	</div>
 </div>
 
-<section class="contact" id="contact">
-	<div class="contact-text">
-		<h2>Contact <span>Me!</span></h2>
-		<h4>If you have any project in your mind</h4>
-		<p>I'm Mark Wilson mema mema lang</p>
-		<div class="list">
-			<li><a href="#">09989315894</a></li>
-			<li><a href="#">mema@gmail.com</a></li>
-			<li><a href="#">Hit Me Up!</a></li>
-		</div>
-		<div class="contact-icons">
-			<a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-			<a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-			<a href="#"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+<div id="work">
+	<div class="work-container">
+		<h1 class="sub-title">My <span>Works</span></h1>
+		<div class="work-list">
+			<div>
+				<img src="img/wilson/work1.jpg" alt="muffin">
+			</div>
+			<div>
+				<img src="img/wilson/work2.png" alt="hbg">
+			</div>
+			<div>
+				<img src="img/wilson/work3.png" alt="calc">
+			</div>
+			<div>
+				<img src="img/wilson/work4.png" alt="wilson">
+			</div>
+			<div>
+				<img src="img/wilson/work5.png" alt="wilson">
+			</div>
+			<div>
+				<img src="img/wilson/work6.png" alt="jhavs">
+			</div>
 		</div>
 	</div>
+</div>
 
-	<div class="contact-form">
-		<form action="">
-			<input type="name" placeholder="Your Name" required>
-			<input type="email" placeholder="Your Email Address" required>
-			<input type="" placeholder="Your Mobile Number" required>
-			<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You"></textarea>
-			<input type="submit" value="Send Message" class="submit" required>
-		</form>
+
+<div id="contact">
+	<div class="contact-container">
+		<div class="contact-text">
+				<h2>Contact <span>Me!</span></h2>
+				<h4>If You Have Any Project In Your Mind.</h4>
+				<p>I'm Mark Wilson mema mema lang</p>
+				<div class="list">
+					<ul>
+					<li><a href="#">09989315894</a></li>
+					<li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTgdZpPdWzfFXzktmWNTRNQFMZwTrvVNfjtmWpPQvsBXvHNwMMWhPhcRkBxxqgDrvFmljr">jasonbunag18@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="contact-icons">
+				<a href="https://www.facebook.com/MarkWilsonBunag"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://www.instagram.com/aintyouxsxs/"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.tiktok.com/@wilsondumpp?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<form action="">
+				<input type="name" placeholder="Your Name" required>
+				<input type="email" placeholder="Your Email Address" required>
+				<input type="" placeholder="Your Mobile Number" required>
+				<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You"></textarea>
+				<input type="submit" value="Send Message" class="submit" required>
+			</form>
+		</div>
 	</div>
-</section>	
+</div>	
 
-</body>
+<div class="svg">
+	<svg class="footer-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" 
+	viewBox="0 0 1920 115.984"><defs><style>.cls-2{fill:#e00707;}</style></defs><title>footer-frame</title><path 
+	class="cls-2" d="M1616.28,381.705c-87.656,5.552-93.356-59.62-197.369-67.562-112.391-8.581-137.609,65.077-251.189,60.632-109.57-4.288-116.156-74.017-225.25-83.153-125.171-10.483-150,78.5-293,88.35-136.948,9.437-173.108-68.092-320.83-77.956C255.5,297.133,143,308.1,0,395.564V406.75H1920V324.537c-18-6.507-43.63-14.492-76.1-15.591C1740.655,305.452,1705.829,376.033,1616.28,381.705Z" 
+	transform="translate(0 -290.766)"></path></svg>
+</div>
+<div id="footer">
+	<div class="footer-container">
+		<div class="footer-about">
+			<h3>About Website</h3>
+			<p>This website was built by three powerful beings who came together to get a one grade</p>
+		</div>
+		<div class="footer-link">
+			<h3>Links</h3>
+			<p>Important: Terms & Conditions, Privacy Policy</p>
+			<p>Useful: Kami lahat syempre	</p>
+			<p>Menu: Home, Service, Work, Contact</p>
+		</div>
+		<div class="footer-icons">
+			<a href="https://www.facebook.com/MarkWilsonBunag"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/aintyouxsxs/"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.tiktok.com/@wilsondumpp?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+			<a href="https://github.com/aintyouxsxs"><i class="fa-brands fa-github"></i></a>
+			<p>You can all contact us in our</p>
+			<p>email <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTgdZpPdWzfFXzktmWNTRNQFMZwTrvVNfjtmWpPQvsBXvHNwMMWhPhcRkBxxqgDrvFmljr"><b>jasonbunag18@gmail.com</b></a></p>
+		</div>
+	</div>
+</div>
+
 </html>

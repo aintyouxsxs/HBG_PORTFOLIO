@@ -1,77 +1,166 @@
 <html>
 
-<style>
-	*{
-	margin-top: 5x;
-	padding: 10px;
-	}
-
-	body{
-	width: 90%;
-	height: 100vh;
-	background-image:url("bg.jfif");
-	background-size: cover;
-	background-position: center;
-	}
-
-	.center{
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-	}
-
-	table{
-			padding: 100px;
-	}
-
-	tr, td {
-		width: 1000PX;
-		color: white;
-	}
-
-	td img{
-		width: 400px;
-		height: 500px;
-	}
-
-	.justify {
-		text-align: justify;
-		line-height: 40px;
-		text-indent: 30px;
-		font-size: 18px;
-	}
-
-	.contact img{
-		border-radius: 40%;
-		height: 50px;
-		width: 50px; 
-		display: inline-block;
-	}
-
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website!</title> 
+    <link rel="stylesheet" href="css/lloyd.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" href="fonts-6/css/all.css">
+ </head>
 
 <body>
 
-<table class="center">
+<div id="header">
+	<div class="cover">
+		<h1 class="logo">HBG</h1>
+		<nav class="navigation">
+			<a href="home.html">Home</a>
+			<a href="#home">Portfolio</a>
+			<a href="#about-me">About</a>
+			<a href="#services">Services</a>
+			<a href="#work">Work</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</div>
+</div>
 
-<tr>
-	<td rowspan="3"> <img src="lloyd.jpeg"> </td>
-	<td> John Lloyd Hernandez </td>
-</tr>
+<div id="home">
+	<div class="home-container">
+		<div class="home-content">
+			<div class="home-list">
+				<h3>Hello, It's Me</h3>
+				<h1><span>John Lloyd</span> Hernandez</h1>
+			</div>
+			<div class="home-img">
+				<img src="img/lloyd/lloydfront.png">
+			</div>
+		</div>
+	</div>
+</div>
 
-<tr>
-	<td > BS IN INFORMATION TECNOLOGY </td>
-</tr>
+<div id="about-me">
+	<div class="about-me-container">
+		<h1 class="sub-title">About <span>Me</span></h1>
+			<div class="about-me-page">
+				<div>
+					<img src="img/lloyd/lloydabout.jpg">
+					<h3>Mobile Application Developer</h3>
+					<p>As a mobile application developer, I am passionate about creating innovative and user-centric mobile experiences. With a strong background in mobile development frameworks and programming languages, I have a deep understanding of the intricacies of building native or cross-platform applications. I thrive on tackling challenges and staying up-to-date with the latest industry trends, ensuring that the mobile applications I develop are not only visually appealing but also highly functional and optimized for performance. With a keen attention to detail and a focus on delivering seamless user experiences, I am dedicated to creating mobile applications that leave a lasting impact.</p>
+				</div>
+			</div>
+			
+	</div>
+</div>
+
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My <span>Services</span></h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>C++</h2>
+				<p>Harness the power of C++ with my professional services to develop robust and high-performance applications. With expertise in C++ programming language, I can create efficient and scalable solutions tailored to your specific needs, whether it's developing software, optimizing algorithms, or creating systems that demand low-level control and maximum performance.</p>
+			</div>
+			<div>
+				<i class="fa-brands fa-java"></i>
+				<h2>Java</h2>
+				<p>Unlock the potential of Java with my comprehensive services for building scalable and reliable applications. With expertise in Java development, I can deliver tailored solutions that leverage the platform's versatility and robustness, ensuring efficient performance, seamless integration, and the ability to handle complex business logic.</p>
+			</div>
+			<div>
+				<i class="fa-solid fa-c"></i>
+				<h2>C#</h2>
+				<p>Leverage the power of C# with my professional services to build robust and scalable applications for various platforms. With expertise in C# development, I can create customized solutions that seamlessly integrate with existing systems, optimize performance, and deliver a rich user experience, helping your business thrive in the digital landscape.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="work">
+	<div class="work-container">
+		<h1 class="sub-title">My <span>Works</span></h1>
+		<div class="work-list">
+			<div>
+				<img src="img/lloyd/work1.jpg" alt="java">
+			</div>
+			<div>
+				<img src="img/wilson/work2.png" alt="hbg">
+			</div>
+			<div>
+				<img src="img/lloyd/work3.jpg" alt="java">
+			</div>
+			<div>
+				<img src="img/wilson/work5.png" alt="wilson">
+			</div>
+			<div>
+				<img src="img/lloyd/work5.jpg" alt="java">
+			</div>
+			<div>
+				<img src="img/wilson/work6.png" alt="jhavs">
+			</div>
+		</div>
+	</div>
+</div>
 
 
-<tr>
-	<td class="justify"> Hello, my name is John Lloyd Y. Hernadez, and I am 20 years old. I am from Brgy, Palangue 1 Naic, Cavite. I am currently enrolled as a BSIT (Bachelor of Science in Information Technology) student at the Cavite State University TMC campus. My hobbies are playing online games, sleeping, reading manga, watching anime, interacting with my pals, and many more. I am a shy person, but when you interact with me, my naughty side comes out first. I'd love for someone to invite me out. </td>
-</tr>
+<div id="contact">
+	<div class="contact-container">
+		<div class="contact-text">
+				<h2>Contact <span>Me!</span></h2>
+				<h4>If You Have Any Project In Your Mind.</h4>
+				<p>I'm Mark Wilson mema mema lang</p>
+				<div class="list">
+					<ul>
+					<li><a href="#">09989315894</a></li>
+					<li><a href="johnlloydhrnndz12@gmail.com">johnlloydhrnndz12@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="contact-icons">
+				<a href="https://www.facebook.com/johnlloydhernandez08"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://www.instagram.com/ku.lloydi"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.tiktok.com/@lloydieeeee88"><i class="fa-brands fa-tiktok"></i></a>
+			</div>
+		</div>
 
-<tr >
-	<td > <a class="contact" href="https://instagram.com/ku.lloydi"><img src="insta.jpg"></a>
-		  <a class="contact" href="https://www.facebook.com/johnlloydhernandez08"><img src="f.jfif"></a> </td>
-</tr>
+		<div class="contact-form">
+			<form action="">
+				<input type="name" placeholder="Your Name" required>
+				<input type="email" placeholder="Your Email Address" required>
+				<input type="" placeholder="Your Mobile Number" required>
+				<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You"></textarea>
+				<input type="submit" value="Send Message" class="submit" required>
+			</form>
+		</div>
+	</div>
+</div>	
 
-</table>	
+<div class="svg">
+	<svg class="footer-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" 
+	viewBox="0 0 1920 115.984"><defs><style>.cls-2{fill:#0397ff;}</style></defs><title>footer-frame</title><path 
+	class="cls-2" d="M1616.28,381.705c-87.656,5.552-93.356-59.62-197.369-67.562-112.391-8.581-137.609,65.077-251.189,60.632-109.57-4.288-116.156-74.017-225.25-83.153-125.171-10.483-150,78.5-293,88.35-136.948,9.437-173.108-68.092-320.83-77.956C255.5,297.133,143,308.1,0,395.564V406.75H1920V324.537c-18-6.507-43.63-14.492-76.1-15.591C1740.655,305.452,1705.829,376.033,1616.28,381.705Z" 
+	transform="translate(0 -290.766)"></path></svg>
+</div>
+<div id="footer">
+	<div class="footer-container">
+		<div class="footer-about">
+			<h3>About Website</h3>
+			<p>This website was built by three powerful beings who came together to get a one grade</p>
+		</div>
+		<div class="footer-link">
+			<h3>Links</h3>
+			<p>Important: Terms & Conditions, Privacy Policy</p>
+			<p>Useful: Kami lahat syempre	</p>
+			<p>Menu: Home, Service, Work, Contact</p>
+		</div>
+		<div class="footer-icons">
+			<a href="https://www.facebook.com/johnlloydhernandez08"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/ku.lloydi"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://www.tiktok.com/@lloydieeeee88"><i class="fa-brands fa-tiktok"></i></a>
+			<p>You can all contact us in our</p>
+			<p>email <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTgdZpPdWzfFXzktmWNTRNQFMZwTrvVNfjtmWpPQvsBXvHNwMMWhPhcRkBxxqgDrvFmljr"><b>jasonbunag18@gmail.com</b></a></p>
+		</div>
+	</div>
+</div>
+
 </html>
