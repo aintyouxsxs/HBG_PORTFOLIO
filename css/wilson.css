@@ -14,8 +14,8 @@ html{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 20px 100px;
+	width: 100%;
+    padding: 20px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@ html{
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 .navigation a::after{
@@ -54,7 +54,7 @@ html{
 /*----------------------------------------------------------------front-------------------------------------------------------------*/
 
 #home{
-	padding: 168px 0px;
+	padding: 130px 168px;
 	color: white;
 	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../img/wilson/home-bg.jpg);
 	background-position: center;
@@ -79,13 +79,12 @@ html{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 18rem;
+	gap: 15rem;
 }
 
 .home-content .home-img img{
-	height: 700px;
-	width: 400px;
-	margin-top: 63px;
+	height: 800px;
+	width: 500px;
 }
 
 .home-list h3{
@@ -102,9 +101,13 @@ span{
 	letter-spacing: 0.1rem;
 	margin-top: 1.4rem;
 	font-weight: 600;
-	font-size: 60px;
+	font-size: 70px;
 }
 
+
+.home-container .contact-icons{
+	margin-top: 20px;
+}
 /*-----------------------------------------------------------------about me-----------------------------------------------------------*/
 
 
@@ -258,7 +261,7 @@ background-size: cover;
 
 #contact{
 	padding: 200px 0;
-	background-image: url(../img/wilson/wilson-contact.jfif);
+	background-image: url(../img/wilson/bg.jpg);
 	background-size: cover;
 	background-position: center;
 }
@@ -319,22 +322,23 @@ background-size: cover;
 }
 
 .contact-icons i{
-	height: 45px;
-	width: 45px;
-	background: #e00707;
-	color: white;
+	height: 60px;
+	width: 60px;
+	background: white;
+	border: 4px solid #e00707;
+	color: #e00707;
 	font-size: 22px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 8px;
+	border-radius: 50%;
 	margin-right: 15px;
 	transition: all .45s ease;
 }
 
 .contact-icons i:hover{
-	background: white;
-	color: #e00707;
+	background: #e00707;
+	color: #fff;
 }
 
 .contact-form form{
@@ -423,6 +427,7 @@ background-size: cover;
 .footer-icons i:hover{
 	background: #e00707;
 	color: #fff;
+	border: 3px solid #fff;
 }
 
 .footer-icons p{
