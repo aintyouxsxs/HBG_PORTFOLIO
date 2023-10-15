@@ -394,7 +394,7 @@ td.time{
 	font-size: 20px;
 	margin-bottom: 40px;
 }
- 
+
 .team span{
 	text-align: center;
 	font-size: 40px;
@@ -434,7 +434,8 @@ span{
 
 /*---------------------------------------------------------footer-----------------------------------------------------*/
 
-.svg{
+.svg svg{
+	position: absolute;
 	background-color: #151212;
 }
 

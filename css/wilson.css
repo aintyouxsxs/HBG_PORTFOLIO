@@ -378,7 +378,8 @@ background-size: cover;
 
 /*----------------------------------------------footer--------------------------------------------*/
 
-.svg{
+.svg svg{
+	position: absolute;
 	background-color: black;
 }
 
