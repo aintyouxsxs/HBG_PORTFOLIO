@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family:sans-serif;
 	box-sizing: border-box;
 }
 
@@ -9,7 +9,12 @@ html{
 	scroll-behavior: smooth;
 }
 
-#header{
+.front{
+	padding: 12px 0 0 18px;
+	width: 100%;
+	height: auto;
+	color: #fff;
+	position: relative;
 	width: 100%;
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/home/back.jfif);
 	background-size: cover;
@@ -17,16 +22,17 @@ html{
 }
 
 .cover{
-	background-color: rgb(12, 12, 12);
+	background-color: #151212;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 	z-index: 1 ;
+	opacity: calc(0.9);
 }
 
 .logo{
@@ -34,13 +40,19 @@ html{
     color: #e00707;
 }
 
+#menu-icons{
+	font-size: 2.6rem;
+	color: #e00707;
+	display: none;
+}
+
 .navigation a{
     position: relative;
     font-size: 1.1em;
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 .navigation a::after{
@@ -50,7 +62,7 @@ html{
 	background: #e00707;
 	position: absolute;
 	left: 0;
-	bottom: -10px;
+	bottom: -5px;
 	transition: 0.5s;
 }
 
@@ -58,12 +70,19 @@ html{
     width: 100%
 }
 
-.content{
-	padding: 50px 0 0 180px;
-	width: 100%;
-	height: auto;
-	color: #fff;
-	position: relative;
+.navigation a.active{
+	color:red;
+}
+
+.login{
+	padding: 10px 50px;
+	border-radius: 20px;
+	border: 3px solid red;
+}	
+
+.login:hover{
+	border: 3px solid red;
+	background-color: red;
 }
 
 .front{
@@ -87,13 +106,16 @@ html{
 }
 
 .content h1{
-	font-family: 'Times New Roman';
-	font-size: 50px;
+	font-size: 70px;
 	padding-left: 20px;
 	letter-spacing: 2px;
 }
 
-
+.content span{
+	text-align: center;
+	font-size: 70px;
+	color: #e00707;
+}
 
 
 /*---------------------------------------------------services--------------------------------------------------*/
@@ -147,7 +169,7 @@ html{
 }
 
 .services-list div:hover{
-	transform: translateY(50px);
+	transform: scale(1.1);
 	cursor: pointer;
 }
 
@@ -177,7 +199,7 @@ html{
 }
 
 .about-img img{
-	height: 300px;
+	height: 400px;
 	width: 500px;
 	border-radius: 10px;
 }
@@ -189,7 +211,7 @@ html{
 .about-content p{
 	font-size: 1.2rem;
 	line-height: 2rem;
-	margin: 2rem 0 3rem;
+	margin-top: 40px;
 	text-align: justify;
 }
 
@@ -201,6 +223,30 @@ html{
 	background: #151212;
 	background-size: cover;
 	background-position: center;
+}
+
+#tables{
+    padding: 120px 0;
+    color: #fff;
+    background: #151212;
+    background-size: cover;
+    background-position: center;
+}
+
+.tabless tr,td{
+	color: white;
+}
+
+.room{
+    width: 100px;
+    height: 100px;
+}
+
+.tabless td{
+	padding: 5px 0px;
+	font-size: 12px;
+	background-color: #a7882f;
+	border: 1px solid gray;
 }
 
 .sub-title{
@@ -219,14 +265,13 @@ table{
 
 .tables tr,td, th{
 	color: white;
-	border-radius: 15px 15px;
 }
 
 .tables td, th{
-	padding: 5px 120px;
+	padding: 5px 150px;
 	font-size: 12px;
-	border: 5px solid #e00707;
-	cursor: pointer;
+	background-color: black;
+	border: 2px solid gray;
 }
 
 td.time{
@@ -235,21 +280,10 @@ td.time{
 	background: white;
 }
 
-.tables .time:hover{
-	transform: translateX(50px);
-	cursor: pointer;
-	transition: 0.8s;
-}
-
 .tables th{
 	font-size: 20px;
 }
 
-.tables .subject:hover{
-	transform: translateX(50px);
-	cursor: pointer;
-	transition: 0.8s;
-}
 /*---------------------------------------------------------contact-----------------------------------------------------*/
 
 #contact{
@@ -373,7 +407,6 @@ td.time{
 	border-radius: 20px;
 }
 
-
 /*---------------------------------------------------------developers-----------------------------------------------------*/
 #developer{
 	padding: 120px 0;
@@ -386,11 +419,6 @@ td.time{
 	font-size: 20px;
 	margin-bottom: 40px;
 }
-
-.team h5{
-	text-align: center;
-	font-size: 40px;
-}
  
 .team span{
 	text-align: center;
@@ -398,13 +426,6 @@ td.time{
 	color: #e00707;
 }
 
-td img{
-	width: 350px;
-	height: 350px;
-	border-radius: 50%;
-	padding: 30px;
-	margin-top: 20px;
-	}
 
 h2{
 	color: white;
@@ -416,14 +437,24 @@ span{
 	font-size: 15px;
 }
 
-.table{
-	margin-left: auto;
-	margin-right: auto;
+.dev{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4rem;
 	text-align: center;
-	}
+	margin-top: 40px;
+}
 
-td:hover img{
-	transform: scale(1.1);
+.dev img{
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+}
+
+.dev h2{
+	margin-top: 20px;
+	font-size: 1.8rem;
 }
 
 /*---------------------------------------------------------footer-----------------------------------------------------*/
@@ -490,46 +521,364 @@ td:hover img{
 }
 
 /*--------------------------css----------------*/
-.navigation .fas{
-	display: none;
+@media (max-width: 1200px){
+	html{
+		font-size: 55%;
+	}
 }
 
-@media only screen and (max-width: 600px){
-	#header{
-		background-image: url(../img/back.jfif);
-		width: 100%;
+@media (max-width: 991px){
+	.cover{
+		padding: 2rem 3%;
 	}
-	.front .content h1{
-		width: 100%;
-		font-size: 16px;
+	
+	.navigation{
+	flex-direction: column;
+	align-items: center;
 	}
-	.front img{
-		width: 100%;
+
+	section{
+		padding: 10rem 3% 2rem;
 	}
-	button{
-		font-size: 16px;
+	.footer{
+		padding: 2rem 3%;
 	}
-	.navigation .fas{
-	display: block;
-	font-size: 25px;
-	}
-	.navigation ul{
-		background: #ff004f;
-		position: fixed;
-		top: 0;
-		right: 0;
-		width: 200px;
-		height: 100vh;
-		padding-top: 50px;
-	}
-	.navigation ul li{
+}
+
+@media (max-width: 1360px){
+	#menu-icons{
 		display: block;
-		margin: 25px;
 	}
-	.navigation ul .fas{
+
+	.navigation{
 		position: absolute;
-		top: 25px;
-		left: 25px;
-		cursor: pointer;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 1rem 3%;
+		background: black;
+		border-top: .1rem solid rgb(0, 0, 0, .2);
+		box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .2);
+		display: none;
 	}
+
+	.navigation a:hover::after{
+		width: 20%;
+	}
+
+	.navigation.active{
+		display: block;
+	}
+
+	.navigation a{
+		flex-direction: column;
+		align-items: center;
+		font-size: 2rem;
+		margin: 2rem 2rem;
+	}
+	.front{
+		padding: 0px 10px;
+		flex-direction: column;
+	}
+
+	.content h1{
+		margin-top: 20rem;
+		font-size: 3rem;
+	}
+
+	.content p{
+		font-size: 1.5rem;
+	}
+
+	.front-img img{
+		width: 80vw;
+		height: 80vw;
+		margin-top: 4rem;
+	}
+
+	.services-list{
+		text-align: center;
+		margin-top: 20px;
+		padding: 40px;
+	}
+
+	.services-list div h2{
+		margin-top: 2px;
+		margin-bottom: 25px;
+	}
+
+	.services-list div p{
+		font-size: 1.5rem;
+		line-height: 2rem;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+
+	.about-img img{
+		width: 400px;
+		padding: 20px;
+		border-radius: 15%;
+	}
+
+	.about-content{
+		padding: 0px 30px;
+	}
+
+	.about-content h3{
+		margin-top: 5px;
+		text-align: center;
+		font-size: 2.7rem;
+	}
+
+	.about-content p{
+		margin-top: 20px;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.about{
+		margin-top: 20px;
+		flex-direction: column;
+	}
+
+	.tables tr, .tables th , .tables td{
+		padding: 20px 20px 5px 20px;
+		font-size: 1.3rem;
+	}
+
+	#contact{
+		padding: 120px 30px;
+	}
+
+	.contact-container{
+		padding: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.contact-container .contact-form{
+		width: 400px;
+	}
+
+	.contact-form input, .contact-form textarea{
+		font-size: 1.3rem;
+	}
+
+	.contact-form .send-button{
+		text-align: center;
+		font-size: 1.3rem;
+		border-radius: 40px;
+	}
+
+	.contact-icons li{
+		font-size: 1rem;
+	}
+
+	.form-container h3{
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.contact-container .map{
+		width: 400px;
+		height: 400px;
+	}
+
+	.dev{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-container{
+		font-size: 1.2rem;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+@media (max-width: 768px){
+	#menu-icons{
+		display: block;
+	}
+
+	.navigation{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 1rem 3%;
+		background: black;
+		border-top: .1rem solid rgb(0, 0, 0, .2);
+		box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .2);
+		display: none;
+	}
+
+	.navigation a:hover::after{
+		width: 20%;
+	}
+
+	.navigation.active{
+		display: block;
+	}
+
+	.navigation a{
+	flex-direction: column;
+	align-items: center;
+		font-size: 1.5rem;
+		margin: 1rem 1rem;
+	}
+	
+	.navigation .login{
+	text-align: center;
+	}
+	
+	.front{
+		padding: 0px 10px;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.content h1{
+		margin-top: 20rem;
+		font-size: 3rem;
+	}
+
+	.content p{
+		font-size: 1.5rem;
+	}
+
+	.front-img img{
+		width: 80vw;
+		height: 60vw;
+		margin-top: 4rem;
+	}
+
+	.services-list{
+		text-align: center;
+		margin-top: 20px;
+		padding: 40px;
+	}
+
+	.services-list div h2{
+		margin-top: 2px;
+		margin-bottom: 25px;
+		font-size: 2.5rem;
+	}
+
+	.services-list div p{
+		font-size: 1.2rem;
+		line-height: 2rem;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	
+	.container h1{
+	font-size: 3.8rem;
+	}
+
+	.about-img img{
+		width: 350px;
+		height: 300px;
+		padding: 20px;
+		border-radius: 15%;
+	}
+
+	.about-content{
+		padding: 0px 30px;
+	}
+
+	.about-content h3{
+		margin-top: 5px;
+		text-align: center;
+		font-size: 2.7rem;
+	}
+
+	.about-content p{
+		margin-top: 20px;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.about{
+		margin-top: 20px;
+		flex-direction: column;
+	}
+
+	.tables tr, .tables th , .tables td{
+		padding: 10px 30px 10px 30px;
+		font-size: 10px;
+		border-radius: 10px;
+	}
+
+	#contact{
+		padding: 120px 30px;
+	}
+
+    .contact-icons ul li{
+        display: flex;
+        flex-direction: column;
+        font-size: 1px;
+    }
+
+	.contact-container{
+		padding: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.contact-container .contact-form{
+		width: 350px;
+	}
+
+	.contact-form input, .contact-form textarea{
+		font-size: 1.3rem;
+	}
+
+	.contact-form .send-button{
+		text-align: center;
+		font-size: 1.3rem;
+		border-radius: 40px;
+	}
+
+    .contact-form{
+        margin-top: 15px;
+    }
+
+	.contact-icons li{
+		font-size: 1rem;
+	}
+
+	.form-container h3{
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.contact-container .map{
+		width: 380px;
+		height: 380px;
+	}
+
+	.dev{
+		display: flex;
+		flex-direction: column;
+	}
+
+    .dev img{
+        width: 200px;
+        height: 200px;
+    }
+
+	.footer-container{
+		font-size: 1.2rem;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+
 }
